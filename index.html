@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Mandi Optimizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🌾 Agricultural Mandi Optimizer</h1>
+                <p>Find the best agricultural market to maximize your profit</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Input Section -->
+            <section class="section input-section">
+                <h2>📋 Farmer Input Parameters</h2>
+                <div class="input-grid">
+                    <div class="input-group">
+                        <label for="farmerLocation">Farmer Starting District / Mandi:</label>
+                        <select id="farmerLocation">
+                            <option value="">Loading mandis…</option>
+                        </select>
+                        <small class="input-hint">Districts loaded from mandis.csv</small>
+                    </div>
+                    <div class="input-group">
+                        <label for="cropQuantity">Crop Quantity (units):</label>
+                        <input type="number" id="cropQuantity" value="100" min="1" max="10000">
+                    </div>
+                    <div class="input-group">
+                        <label for="transportRate">Transport Rate (₹/km):</label>
+                        <input type="number" id="transportRate" value="2" min="0.1" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="vehicleSpeed">Vehicle Speed (km/h):</label>
+                        <input type="number" id="vehicleSpeed" value="60" min="10" max="120">
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="calculateOptimalRoute()">
+                    🚀 Calculate Optimal Route
+                </button>
+            </section>
+
+            <!-- Best Mandi Summary -->
+            <section class="section best-section">
+                <h2>🏆 Best Mandi Recommendations</h2>
+                <div id="bestMandiSummary">
+                    <p style="color:#888;">Run the calculation to see recommendations.</p>
+                </div>
+            </section>
+
+            <!-- Profit Ranking -->
+            <section class="section profit-section">
+                <h2>💰 Mandi Ranking by Profit</h2>
+                <div id="profitResults" class="results-container"></div>
+            </section>
+
+            <!-- Time Keeper / ETA -->
+            <section class="section eta-section">
+                <div class="eta-header">
+                    <h2>⏱️ Estimated Time of Arrival (ETA)</h2>
+                    <div class="current-time" id="currentTime"></div>
+                </div>
+                <p class="eta-hint">Use + / − buttons to adjust for traffic or stops (15-min steps). Minus is disabled when time cannot go lower.</p>
+                <div class="eta-container">
+                    <div id="etaResults" class="eta-results"></div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Agricultural Mandi Optimizer | Helping Farmers Maximize Profit</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
