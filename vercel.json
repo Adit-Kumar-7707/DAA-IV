@@ -2,5 +2,7 @@
   "buildCommand": "",
   "framework": "static",
   "public": ".",
-  "cleanUrls": false
+  "env": {},
+  "cleanUrls": false,
+  "regions": ["sfo1"]
 }
