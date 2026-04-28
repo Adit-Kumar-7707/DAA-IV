@@ -14,7 +14,11 @@ let lastSpeed       = 60;
 // ── CSV Loader ─────────────────────────────────
 async function loadCSV() {
     try {
-        const res  = await fetch('./mandis.csv');
+        // Try root-relative path first, fallback to relative
+        let res = await fetch('/mandis.csv');
+        if (!res.ok) {
+            res = await fetch('./mandis.csv');
+        }
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         const text = await res.text();
         return parseCSV(text);
