@@ -1,0 +1,21 @@
+id,name,district,state,lat,lng,price_per_unit,distance_from_0
+0,Lucknow Krishi Mandi,Lucknow,Uttar Pradesh,26.8467,80.9462,0,0
+1,Agra Mandi Samiti,Agra,Uttar Pradesh,27.1767,78.0081,520,10
+2,Varanasi Sabzi Mandi,Varanasi,Uttar Pradesh,25.3176,82.9739,490,3
+3,Kanpur Anaj Mandi,Kanpur,Uttar Pradesh,26.4499,80.3319,560,8
+4,Allahabad Mandi,Prayagraj,Uttar Pradesh,25.4358,81.8463,610,11
+5,Mathura Mandi Samiti,Mathura,Uttar Pradesh,27.4924,77.6737,540,6
+6,Meerut Krishi Upaj Mandi,Meerut,Uttar Pradesh,28.9845,77.7064,505,9
+7,Bareilly Mandi,Bareilly,Uttar Pradesh,28.3670,79.4304,530,14
+8,Aligarh Mandi Samiti,Aligarh,Uttar Pradesh,27.8974,78.0880,515,7
+9,Moradabad Mandi,Moradabad,Uttar Pradesh,28.8386,78.7733,525,12
+10,Gorakhpur Mandi,Gorakhpur,Uttar Pradesh,26.7606,83.3732,575,15
+11,Firozabad Mandi,Firozabad,Uttar Pradesh,27.1591,78.3957,545,5
+12,Jhansi Mandi Samiti,Jhansi,Uttar Pradesh,25.4484,78.5685,590,13
+13,Rampur Mandi,Rampur,Uttar Pradesh,28.8159,79.0258,510,10
+14,Saharanpur Mandi,Saharanpur,Uttar Pradesh,29.9680,77.5460,535,16
+15,Muzaffarnagar Mandi,Muzaffarnagar,Uttar Pradesh,29.4727,77.7085,550,11
+16,Bijnor Mandi Samiti,Bijnor,Uttar Pradesh,29.3724,78.1353,520,13
+17,Shahjahanpur Mandi,Shahjahanpur,Uttar Pradesh,27.8833,79.9050,500,9
+18,Hardoi Mandi,Hardoi,Uttar Pradesh,27.3956,80.1306,515,7
+19,Etawah Mandi Samiti,Etawah,Uttar Pradesh,26.7715,79.0239,570,8
