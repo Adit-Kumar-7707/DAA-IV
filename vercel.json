@@ -1,5 +1,9 @@
 {
   "buildCommand": "",
   "framework": "static",
-  "public": "."
+  "public": ".",
+  "ignoreCommand": "git check-ignore -q $VERCEL_FILE_PATH",
+  "rewrites": [
+    { "source": "/:path*", "destination": "/$path" }
+  ]
 }
